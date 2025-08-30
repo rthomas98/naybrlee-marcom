@@ -58,7 +58,7 @@ jobs:
         run: tar -czf app.tar.gz --exclude=node_modules --exclude=.git --exclude=tests --exclude=.github .
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: app-build
           path: app.tar.gz

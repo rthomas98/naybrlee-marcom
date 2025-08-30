@@ -227,7 +227,7 @@ jobs:
 
       - name: Upload browser test artifacts
         if: failure()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: browser-screenshots
           path: tests/Browser/screenshots
