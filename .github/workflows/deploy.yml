@@ -83,7 +83,7 @@ jobs:
         run: tar -xzf app.tar.gz
 
       - name: Deploy to staging server
-        uses: appleboy/ssh-action@v1.0.0
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.STAGING_HOST }}
           username: ${{ secrets.STAGING_USERNAME }}
@@ -121,7 +121,7 @@ jobs:
         run: tar -xzf app.tar.gz
 
       - name: Deploy to production server
-        uses: appleboy/ssh-action@v1.0.0
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.PRODUCTION_HOST }}
           username: ${{ secrets.PRODUCTION_USERNAME }}
